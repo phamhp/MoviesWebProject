@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+	<title>FlexSlider 2</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+  <!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+
+	<!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+
+</head>
+<body class="loading">
+
+  <div id="container" class="cf">
+  <div id="container" class="cf">
+    <header role="navigation">
+      <a class="logo" href="http://www.woothemes.com" title="WooThemes">
+        <img src="images/logo.png" alt="WooThemes" />
+	  </a>
+      <h1>Welcome to Moviedb</h1>
+      <h2>Please login: </h2>
+      
+     
+      <nav>
+        <FORM ACTION = "Login" METHOD="Post">
+<table>
+						<tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="100"><div align="left">Email:</div></td>
+                            <td><input name="email" type="text" size="25" maxlength="100" /></td>
+                          </tr>
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="100"><div align="left">Password:</div></td>
+                            <td><input name="pass" type="password" size="25" maxlength="100" /></td>
+                          </tr>
+                          <tr>
+                           <td width="15">&nbsp;</td>
+                            <td></td>
+                            <td> <INPUT class="button green:hover" TYPE="SUBMIT" VALUE="Login"><input class="button green:hover" value="Reset" name="reset" type="reset" /></td>
+
+                          
+                          </tr>
+		
+
+</table> 
+
+
+</FORM>
+ 
+      </nav>
+      
+     <FORM>
+<input class="button green:hover" type="button" value="Employee Login" onclick="window.location='http://localhost:8080/ProjectCS122B/EmployeeLogin.html';">
+
+</FORM>
+    </header>
+
+	<div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider carousel">
+          <ul class="slides">
+            <li>
+  	    	    <img src="images/terminator.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/thedarkknight.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/fastandfurious.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
+  	    		</li>
+            <li>
+  	    	    <img src="images/terminator.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/thedarkknight.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/fastandfurious.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
+  	    		</li>
+            <li>
+  	    	    <img src="images/terminator.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/thedarkknight.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/fastandfurious.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+      <table>
+      <aside>
+        <div class="cf">
+          <h3>Tweet</h3>
+         
+  
+   
+        </div>
+        <tr>
+        
+        <td><div id="view-js" class="code" style="width:800px; margin:0 auto;">
+<a class="twitter-timeline" href="https://twitter.com/AMCTheatres" data-widget-id="429698455041089537">Tweets by @AMCTheatres</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</td>
+		<td>
+		<div id="view-js" class="code" style="width:800px; margin:0 auto;">
+		<a class="twitter-timeline" href="https://twitter.com/IMDb" data-widget-id="429896335551000576">Tweets by @IMDb</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+		
+		</td>
+			
+		</tr>
+		</div>
+       
+      </aside>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        pausePlay: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+
+</body>
+</html>

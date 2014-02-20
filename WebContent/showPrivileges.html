@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+  <TITLE>Privileges</TITLE>
+</HEAD>
+
+<BODY BGCOLOR=" #42a2ce">
+<H1 ALIGN="CENTER">Privileges</H1>
+<div ALIGN="CENTER">
+
+
+<FORM ACTION="ShowDatabases"
+      METHOD="GET">
+<table>
+						 
+						 </tr>
+						 <td> <table border>
+						 <tr><b> Database privileges</b></tr>
+					
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Create</div></td>
+                            <td><input name="cbOption" value= "dbCreate" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Drop</div></td>
+                            <td><input name="cbOption" value= "dbDrop" type="radio" size="42" maxlength="100" /></td>
+                          </br>
+                          </br>
+                          </tr>
+                          
+						 </table></td>
+						  <td> <table border>
+						 <tr><b> Table privileges</b></tr>
+					
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Select</div></td>
+                            <td><input name="cbOption" value= "tbSelect" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Insert</div></td>
+                            <td><input name="cbOption" value= "tbInsert" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Update</div></td>
+                            <td><input name="cbOption" value= "tbUpdate" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						   <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Delete</div></td>
+                            <td><input name="cbOption" value= "tbDelete" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						 </table></td>
+						  <td> <table border>
+						 <tr><b> Column privileges</b></tr>
+					
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Select</div></td>
+                            <td><input name="cbOption" value= "columnSelect" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Insert</div></td>
+                            <td><input name="cbOption" value= "columnInsert" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Update</div></td>
+                            <td><input name="cbOption" value= "columnUpdate" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						
+						 </table></td>
+						  <td> <table border>
+						 <tr><b> Procedure privileges</b></tr>
+					
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Alter</div></td>
+                            <td><input name="cbOption" value= "pcAlter" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Create</div></td>
+                            <td><input name="cbOption" value= "pcCreate" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						  <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="145"><div align="left">Execute</div></td>
+                            <td><input name="cbOption" value= "pcExecute" type="radio" size="42" maxlength="100" /></td>
+                          </tr>
+						 
+						 </table></td>
+						 </tr>
+						 
+						 	
+						 	 <tr>
+                       		
+                          
+                            <td><input name="GrantRevoke" value = "GrantAll" type="radio" size="42" maxlength="100" />Grant All Privilege</td>
+                           
+                            
+                           
+                            <td><input name="GrantRevoke" value = "Grant" type="radio" size="42" maxlength="100" />Grant Privilege</td>
+                          
+						   
+                            <td><input name="GrantRevoke" value = "RevokeAll" type="radio" size="42" maxlength="100" />Revoke All Privilege</td>
+                            
+                            
+                            <td><input name="GrantRevoke" value = "Revoke" type="radio" size="42" maxlength="100" />Revoke Privilege</td>
+                          </tr>
+
+</table> 
+
+
+  <INPUT TYPE="SUBMIT" VALUE="Submit">
+   <input value="Reset Form" name="reset" type="reset" />
+
+</FORM>
+</div>
+</BODY>
+</HTML>
